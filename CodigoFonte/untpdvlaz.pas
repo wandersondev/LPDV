@@ -13,7 +13,9 @@ type
 
   TFormPDVLaz = class(TForm)
     Button1: TButton;
+    Button2: TButton;
     procedure Button1Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
   private
 
   public
@@ -24,7 +26,7 @@ var
   FormPDVLaz: TFormPDVLaz;
 
 implementation
-   uses untFormCadastroPadrao;
+   uses untFormCadastroPadrao, untFormCadastro;
 {$R *.lfm}
 
 { TFormPDVLaz }
@@ -36,6 +38,12 @@ begin
   // fechar este form e em seguida rodar o código abaixo
   FormCadastroPadrao := TFormCadastroPadrao.Create(Self);
   FormCadastroPadrao.Show;
+
+end;
+
+procedure TFormPDVLaz.Button2Click(Sender: TObject);
+var FormCadastro: TFormCadastro;
+begin
 
 end;
 

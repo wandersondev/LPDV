@@ -40,7 +40,6 @@ type
     BCPanel3: TBCPanel;
     BCRoundedImage1: TBCRoundedImage;
     BCToolBar1: TBCToolBar;
-    BGRAImageList1: TBGRAImageList;
     imagesHab: TBGRAImageList;
     BGRASpeedButton1: TBGRASpeedButton;
     BGRAThemeRadioButton1: TBGRAThemeRadioButton;
