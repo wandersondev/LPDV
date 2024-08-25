@@ -11,7 +11,7 @@ uses
   {$ENDIF}
   Interfaces, // this includes the LCL widgetset
   Forms, untPDVLaz, lazcontrols, rxnew, untFormCadastroPadrao, untFuncoes, 
-untFrmMensagem
+untFrmMensagem, untFormCadastro
   { you can add units after this };
 
 {$R *.res}
@@ -23,6 +23,7 @@ begin
   Application.CreateForm(TFormPDVLaz, FormPDVLaz);
   Application.CreateForm(TFormCadastroPadrao, FormCadastroPadrao);
   Application.CreateForm(TFrmMensagem, FrmMensagem);
+  Application.CreateForm(TFormCadastro, FormCadastro);
   Application.Run;
 end.
 

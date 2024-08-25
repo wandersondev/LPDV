@@ -11,7 +11,11 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="5"/>
         <CursorPos X="15" Y="14"/>
+<<<<<<< HEAD
         <UsageCount Value="60"/>
+=======
+        <UsageCount Value="56"/>
+>>>>>>> 4d24e44099db71a75ed3ae6af63075e7f28ac939
       </Unit>
       <Unit>
         <Filename Value="untpdvlaz.pas"/>
@@ -20,11 +24,18 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="untPDVLaz"/>
+<<<<<<< HEAD
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
         <TopLine Value="9"/>
         <CursorPos X="93" Y="38"/>
         <UsageCount Value="60"/>
+=======
+        <EditorIndex Value="2"/>
+        <TopLine Value="29"/>
+        <CursorPos X="32" Y="45"/>
+        <UsageCount Value="56"/>
+>>>>>>> 4d24e44099db71a75ed3ae6af63075e7f28ac939
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -35,9 +46,15 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="untFormCadastroPadrao"/>
+<<<<<<< HEAD
         <TopLine Value="238"/>
         <CursorPos X="13" Y="243"/>
         <UsageCount Value="60"/>
+=======
+        <TopLine Value="104"/>
+        <CursorPos X="10" Y="119"/>
+        <UsageCount Value="56"/>
+>>>>>>> 4d24e44099db71a75ed3ae6af63075e7f28ac939
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -49,7 +66,11 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="225"/>
         <CursorPos X="25" Y="8"/>
+<<<<<<< HEAD
         <UsageCount Value="52"/>
+=======
+        <UsageCount Value="48"/>
+>>>>>>> 4d24e44099db71a75ed3ae6af63075e7f28ac939
       </Unit>
       <Unit>
         <Filename Value="Cadastros\untfrmmensagem.pas"/>
@@ -58,10 +79,17 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="untFrmMensagem"/>
+<<<<<<< HEAD
         <EditorIndex Value="2"/>
         <TopLine Value="39"/>
         <CursorPos X="28" Y="45"/>
         <UsageCount Value="51"/>
+=======
+        <EditorIndex Value="3"/>
+        <TopLine Value="39"/>
+        <CursorPos X="23" Y="75"/>
+        <UsageCount Value="47"/>
+>>>>>>> 4d24e44099db71a75ed3ae6af63075e7f28ac939
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -71,8 +99,22 @@
         <TopLine Value="181"/>
         <UsageCount Value="8"/>
       </Unit>
+      <Unit>
+        <Filename Value="Cadastros\untformcadastro.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormCadastro"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="untFormCadastro"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="29"/>
+        <CursorPos X="3" Y="44"/>
+        <UsageCount Value="24"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
     </Units>
-    <JumpHistory HistoryIndex="1">
+    <JumpHistory HistoryIndex="14">
       <Position>
         <Filename Value="Cadastros\untformcadastropadrao.pas"/>
         <Caret Line="239" Column="4" TopLine="236"/>
@@ -80,6 +122,57 @@
       <Position>
         <Filename Value="Cadastros\untformcadastropadrao.pas"/>
         <Caret Line="238" Column="4" TopLine="235"/>
+      </Position>
+      <Position>
+        <Filename Value="Cadastros\untformcadastro.pas"/>
+      </Position>
+      <Position>
+        <Filename Value="untpdvlaz.pas"/>
+        <Caret Line="38" Column="93" TopLine="9"/>
+      </Position>
+      <Position>
+        <Filename Value="untpdvlaz.pas"/>
+        <Caret Line="39" Column="93" TopLine="20"/>
+      </Position>
+      <Position>
+        <Filename Value="untpdvlaz.pas"/>
+        <Caret Line="34" TopLine="25"/>
+      </Position>
+      <Position>
+        <Filename Value="untpdvlaz.pas"/>
+        <Caret Line="37" Column="3" TopLine="26"/>
+      </Position>
+      <Position>
+        <Filename Value="untpdvlaz.pas"/>
+        <Caret Line="45" TopLine="18"/>
+      </Position>
+      <Position>
+        <Filename Value="untpdvlaz.pas"/>
+        <Caret Line="36" Column="29" TopLine="32"/>
+      </Position>
+      <Position>
+        <Filename Value="untpdvlaz.pas"/>
+        <Caret Line="47" Column="3" TopLine="23"/>
+      </Position>
+      <Position>
+        <Filename Value="Cadastros\untformcadastro.pas"/>
+        <Caret TopLine="18"/>
+      </Position>
+      <Position>
+        <Filename Value="untpdvlaz.pas"/>
+        <Caret Line="45" Column="31" TopLine="29"/>
+      </Position>
+      <Position>
+        <Filename Value="Cadastros\untformcadastro.pas"/>
+        <Caret Line="6" Column="23" TopLine="5"/>
+      </Position>
+      <Position>
+        <Filename Value="Cadastros\untformcadastro.pas"/>
+        <Caret Line="45" Column="3" TopLine="30"/>
+      </Position>
+      <Position>
+        <Filename Value="Cadastros\untformcadastro.pas"/>
+        <Caret Line="44" Column="3" TopLine="29"/>
       </Position>
     </JumpHistory>
     <RunParams>
