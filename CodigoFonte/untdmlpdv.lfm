@@ -1,0 +1,33 @@
+object DmLPDV: TDmLPDV
+  OldCreateOrder = False
+  Height = 332
+  HorizontalOffset = 256
+  VerticalOffset = 145
+  Width = 565
+  object Conexao: TSQLConnector
+    Connected = False
+    LoginPrompt = False
+    KeepConnection = False
+    Left = 64
+    Top = 16
+  end
+  object Transacao: TSQLTransaction
+    Active = False
+    Left = 168
+    Top = 16
+  end
+  object qryEmpresas: TSQLQuery
+    FieldDefs = <>
+    Params = <>
+    Macros = <>
+    Left = 65
+    Top = 96
+  end
+  object qryTerminais: TSQLQuery
+    FieldDefs = <>
+    Params = <>
+    Macros = <>
+    Left = 168
+    Top = 96
+  end
+end

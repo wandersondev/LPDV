@@ -4,7 +4,6 @@ object FormCadastro: TFormCadastro
   Top = 178
   Width = 530
   BorderIcons = [biSystemMenu]
-  BorderStyle = bsSingle
   Caption = 'Cadastro'
   ClientHeight = 410
   ClientWidth = 530
@@ -12,9 +11,8 @@ object FormCadastro: TFormCadastro
   Font.Color = clWindowText
   Font.Height = -9
   Font.Name = 'Verdana'
-  KeyPreview = True
-  Position = poMainFormCenter
-  LCLVersion = '2.2.4.0'
+  OnKeyDown = FormKeyDown
+  LCLVersion = '3.4.0.0'
   object pnBarra: TBCPanel
     Left = 0
     Height = 56
@@ -201,6 +199,7 @@ object FormCadastro: TFormCadastro
       }
       Layout = blGlyphTop
       Margin = 1
+      OnClick = btnNovoClick
       ParentFont = False
     end
     object btnFechar: TBGRASpeedButton
@@ -351,6 +350,7 @@ object FormCadastro: TFormCadastro
       }
       Layout = blGlyphTop
       Margin = 1
+      OnClick = btnFecharClick
       ParentFont = False
     end
     object btnPesquisar: TBGRASpeedButton
@@ -501,6 +501,7 @@ object FormCadastro: TFormCadastro
       }
       Layout = blGlyphTop
       Margin = 1
+      OnClick = btnPesquisarClick
       ParentFont = False
     end
     object btnExcluir: TBGRASpeedButton
@@ -651,6 +652,7 @@ object FormCadastro: TFormCadastro
       }
       Layout = blGlyphTop
       Margin = 1
+      OnClick = btnExcluirClick
       ParentFont = False
     end
     object btnAlterar: TBGRASpeedButton
@@ -801,6 +803,7 @@ object FormCadastro: TFormCadastro
       }
       Layout = blGlyphTop
       Margin = 1
+      OnClick = btnAlterarClick
       ParentFont = False
     end
     object btnGravar: TBGRASpeedButton
@@ -951,6 +954,7 @@ object FormCadastro: TFormCadastro
       }
       Layout = blGlyphTop
       Margin = 1
+      OnClick = btnGravarClick
       ParentFont = False
     end
   end
@@ -1031,15 +1035,6 @@ object FormCadastro: TFormCadastro
     Rounding.RoundX = 1
     Rounding.RoundY = 1
     TabOrder = 2
-    object ATStatus1: TATStatus
-      Left = 1
-      Height = 24
-      Top = -7
-      Width = 528
-      Align = alBottom
-      DoubleBuffered = True
-      Panels = <>
-    end
   end
   object dtsCadastro: TDataSource
     Left = 477

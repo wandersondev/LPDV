@@ -1,0 +1,397 @@
+object frmcadastroprodutos: Tfrmcadastroprodutos
+  Left = 565
+  Height = 414
+  Top = 212
+  Width = 490
+  Caption = 'Cadastro de produtos'
+  ClientHeight = 414
+  ClientWidth = 490
+  Font.CharSet = ANSI_CHARSET
+  Font.Height = -16
+  Font.Name = 'Courier New'
+  Font.Pitch = fpFixed
+  Font.Quality = fqDraft
+  LCLVersion = '3.4.0.0'
+  object LabeledEdit1: TLabeledEdit
+    Left = 16
+    Height = 26
+    Top = 32
+    Width = 80
+    EditLabel.Height = 21
+    EditLabel.Width = 80
+    EditLabel.Caption = 'Código'
+    EditLabel.ParentColor = False
+    EditLabel.ParentFont = False
+    EditLabel.Font.CharSet = ANSI_CHARSET
+    EditLabel.Font.Color = clBtnShadow
+    EditLabel.Font.Height = -16
+    EditLabel.Font.Pitch = fpVariable
+    EditLabel.Font.Quality = fqDraft
+    Enabled = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Courier New'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 0
+    Text = '000001'
+  end
+  object ComboBox1: TComboBox
+    Left = 16
+    Height = 26
+    Top = 181
+    Width = 439
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Courier New'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    ItemHeight = 18
+    ItemIndex = 0
+    Items.Strings = (
+      'Sem categoria'
+      'Vestuário'
+      'Alimentício'
+      'Pets'
+      'Farmaceuticos'
+    )
+    ParentFont = False
+    TabOrder = 1
+    Text = 'Sem categoria'
+  end
+  object Label1: TLabel
+    Left = 16
+    Height = 18
+    Top = 160
+    Width = 90
+    Caption = 'Categoria'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Courier New'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object LabeledEdit2: TLabeledEdit
+    Left = 16
+    Height = 26
+    Top = 80
+    Width = 463
+    EditLabel.Height = 18
+    EditLabel.Width = 463
+    EditLabel.Caption = 'Descrição'
+    EditLabel.ParentColor = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Courier New'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 2
+  end
+  object Label2: TLabel
+    Left = 376
+    Height = 18
+    Top = 212
+    Width = 90
+    Caption = 'Unididade'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Courier New'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object ComboBox2: TComboBox
+    Left = 376
+    Height = 26
+    Top = 232
+    Width = 79
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Courier New'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    ItemHeight = 18
+    ItemIndex = 0
+    Items.Strings = (
+      'UND'
+      'CXA'
+      'PCT'
+    )
+    ParentFont = False
+    TabOrder = 3
+    Text = 'UND'
+  end
+  object SpeedButton1: TSpeedButton
+    Left = 456
+    Height = 26
+    Top = 232
+    Width = 23
+    Caption = '(+)'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Courier New'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    OnClick = SpeedButton1Click
+    ParentFont = False
+  end
+  object SpeedButton2: TSpeedButton
+    Left = 456
+    Height = 26
+    Top = 181
+    Width = 23
+    Caption = '(+)'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Courier New'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    OnClick = SpeedButton2Click
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 16
+    Height = 18
+    Top = 112
+    Width = 50
+    Caption = 'Marca'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Courier New'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object ComboBox3: TComboBox
+    Left = 16
+    Height = 26
+    Top = 133
+    Width = 439
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Courier New'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    ItemHeight = 18
+    ItemIndex = 0
+    Items.Strings = (
+      ''
+      'Coca-cola'
+      'Malwee'
+      'Nike'
+      ''
+    )
+    ParentFont = False
+    TabOrder = 4
+  end
+  object SpeedButton3: TSpeedButton
+    Left = 456
+    Height = 26
+    Top = 133
+    Width = 23
+    Caption = '(+)'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Courier New'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    OnClick = SpeedButton3Click
+    ParentFont = False
+  end
+  object LabeledEdit3: TLabeledEdit
+    Left = 16
+    Height = 26
+    Top = 288
+    Width = 104
+    EditLabel.Height = 18
+    EditLabel.Width = 104
+    EditLabel.Caption = 'NCM'
+    EditLabel.ParentColor = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Courier New'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 5
+  end
+  object LabeledEdit4: TLabeledEdit
+    Left = 127
+    Height = 26
+    Top = 288
+    Width = 80
+    EditLabel.Height = 18
+    EditLabel.Width = 80
+    EditLabel.Caption = 'Ex.TIPI'
+    EditLabel.ParentColor = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Courier New'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 6
+  end
+  object LabeledEdit5: TLabeledEdit
+    Left = 215
+    Height = 26
+    Top = 288
+    Width = 80
+    EditLabel.Height = 18
+    EditLabel.Width = 80
+    EditLabel.Caption = 'CEST'
+    EditLabel.ParentColor = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Courier New'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 7
+  end
+  object LabeledEdit6: TLabeledEdit
+    Left = 16
+    Height = 26
+    Top = 232
+    Width = 355
+    EditLabel.Height = 18
+    EditLabel.Width = 355
+    EditLabel.Caption = 'Referência'
+    EditLabel.ParentColor = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Courier New'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 8
+  end
+  object LabeledEdit7: TLabeledEdit
+    Left = 120
+    Height = 26
+    Top = 32
+    Width = 335
+    EditLabel.Height = 18
+    EditLabel.Width = 335
+    EditLabel.Caption = 'Código de barras'
+    EditLabel.ParentColor = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Courier New'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 9
+  end
+  object MaskEdit1: TMaskEdit
+    Left = 16
+    Height = 26
+    Top = 341
+    Width = 80
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Courier New'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    MaxLength = 0
+    ParentFont = False
+    TabOrder = 10
+    SpaceChar = '_'
+  end
+  object Label4: TLabel
+    Left = 16
+    Height = 18
+    Top = 317
+    Width = 80
+    Caption = 'Pr.Custo'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Courier New'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label5: TLabel
+    Left = 104
+    Height = 18
+    Top = 317
+    Width = 60
+    Caption = 'Margem'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Courier New'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object MaskEdit2: TMaskEdit
+    Left = 104
+    Height = 26
+    Top = 341
+    Width = 80
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Courier New'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    MaxLength = 0
+    ParentFont = False
+    TabOrder = 11
+    SpaceChar = '_'
+  end
+  object Label6: TLabel
+    Left = 192
+    Height = 18
+    Top = 317
+    Width = 80
+    Caption = 'Pr.Venda'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Courier New'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object MaskEdit3: TMaskEdit
+    Left = 192
+    Height = 26
+    Top = 341
+    Width = 103
+    EnableSets = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Courier New'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    MaxLength = 10
+    ParentFont = False
+    TabOrder = 12
+    EditMask = '###.###,##;0;_'
+    SpaceChar = '_'
+  end
+  object SpeedButton5: TSpeedButton
+    Left = 456
+    Height = 26
+    Top = 32
+    Width = 23
+    Caption = '(+)'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'Courier New'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    OnClick = SpeedButton5Click
+    ParentFont = False
+  end
+end

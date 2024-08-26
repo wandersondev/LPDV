@@ -26,6 +26,9 @@
     </RunParams>
     <RequiredPackages>
       <Item>
+        <PackageName Value="SQLDBLaz"/>
+      </Item>
+      <Item>
         <PackageName Value="FCL"/>
       </Item>
       <Item>
@@ -85,8 +88,16 @@
         <Filename Value="Cadastros\untformcadastro.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="FormCadastro"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="untFormCadastro"/>
+      </Unit>
+      <Unit>
+        <Filename Value="untdmlpdv.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="DmLPDV"/>
+        <ResourceBaseClass Value="DataModule"/>
+        <UnitName Value="untDmLPDV"/>
       </Unit>
     </Units>
   </ProjectOptions>
