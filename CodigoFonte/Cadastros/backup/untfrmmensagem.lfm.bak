@@ -1,9 +1,9 @@
-object FrmMensagem: TFrmMensagem
+object FormMensagem: TFormMensagem
   Left = 585
   Height = 212
   Top = 188
   Width = 449
-  Caption = 'FrmMensagem'
+  Caption = 'FormMensagem'
   ClientHeight = 212
   ClientWidth = 449
   OnKeyDown = FormKeyDown
@@ -52,8 +52,8 @@ object FrmMensagem: TFrmMensagem
   end
   object pnBotoes: TBCPanel
     Left = 0
-    Height = 28
-    Top = 184
+    Height = 36
+    Top = 176
     Width = 449
     Align = alBottom
     Background.Color = clBtnFace
@@ -91,7 +91,7 @@ object FrmMensagem: TFrmMensagem
   end
   object pnMensagem: TBCPanel
     Left = 0
-    Height = 159
+    Height = 151
     Top = 25
     Width = 449
     Align = alClient

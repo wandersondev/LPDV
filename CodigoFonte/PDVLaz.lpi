@@ -77,12 +77,12 @@
         <UnitName Value="untFuncoes"/>
       </Unit>
       <Unit>
-        <Filename Value="Cadastros\untfrmmensagem.pas"/>
+        <Filename Value="Cadastros\untformmensagem.pas"/>
         <IsPartOfProject Value="True"/>
-        <ComponentName Value="FrmMensagem"/>
+        <ComponentName Value="FormMensagem"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UnitName Value="untFrmMensagem"/>
+        <UnitName Value="untFormMensagem"/>
       </Unit>
       <Unit>
         <Filename Value="Cadastros\untformcadastro.pas"/>
@@ -96,8 +96,22 @@
         <Filename Value="untdmlpdv.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="DmLPDV"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="DataModule"/>
         <UnitName Value="untDmLPDV"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Cadastros\untformcadastroempresas.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormCadastroEmpresas"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Utilitarios\untformdatabase.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormDataBase"/>
+        <ResourceBaseClass Value="Form"/>
       </Unit>
     </Units>
   </ProjectOptions>
@@ -109,7 +123,7 @@
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>
-      <OtherUnitFiles Value="Cadastros;Bibliotecas"/>
+      <OtherUnitFiles Value="Cadastros;Bibliotecas;Utilitarios"/>
       <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
     </SearchPaths>
     <Linking>

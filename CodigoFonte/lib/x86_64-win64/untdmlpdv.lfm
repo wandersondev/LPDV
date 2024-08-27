@@ -1,23 +1,29 @@
 object DmLPDV: TDmLPDV
+  OnCreate = DataModuleCreate
   OldCreateOrder = False
   Height = 332
-  HorizontalOffset = 256
-  VerticalOffset = 145
+  HorizontalOffset = 427
+  VerticalOffset = 186
   Width = 565
   object Conexao: TSQLConnector
     Connected = False
     LoginPrompt = False
-    KeepConnection = False
+    KeepConnection = True
+    Transaction = Transacao
+    ConnectorType = 'PostgreSQL'
     Left = 64
     Top = 16
   end
   object Transacao: TSQLTransaction
     Active = False
+    Database = Conexao
     Left = 168
     Top = 16
   end
   object qryEmpresas: TSQLQuery
     FieldDefs = <>
+    Database = Conexao
+    Transaction = Transacao
     Params = <>
     Macros = <>
     Left = 65

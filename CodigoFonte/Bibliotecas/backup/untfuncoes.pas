@@ -5,7 +5,7 @@ unit untFuncoes;
 interface
 
 uses
-  Classes, SysUtils, Graphics, Forms,Dialogs, controls, ExtCtrls, Buttons;
+  Classes, SysUtils, StrUtils,Graphics, Forms,Dialogs, controls, ExtCtrls, Buttons;
 function fMensagem(strTitulo: String;
                    strMensag: String;
                    arrOpcoes: Array Of String;
@@ -16,9 +16,10 @@ function fMensagem(strTitulo: String;
 procedure pCriarFormularios(Classe: TComponentClass; Var frmForm);
 procedure pMsgErro(const strMsg: String);
 function fEmptyStr(strString: String): Boolean;
+function Crypt(vString: String) : String;
 
 implementation
-      uses untFrmMensagem;
+      uses untFormMensagem;
 
 function fMensagem(strTitulo: String; strMensag: String;
   arrOpcoes: array of String; intFocBot: Integer; blnSaiEsc: Boolean;
@@ -58,8 +59,8 @@ begin
      (intFocBot > intQtdOpc) then
     intFocBot := 1;
   try
-    pCriarFormularios(TFrmMensagem, FrmMensagem);
-    With FrmMensagem Do
+    pCriarFormularios(TFormMensagem, FormMensagem);
+    With FormMensagem Do
     Begin
       if (strTitulo = '') then
         strTitulo := 'Aviso';
@@ -69,7 +70,7 @@ begin
       pnMensagem.Caption := strMensag;
       if (intQtdOpc = 1) then
       begin
-        with TSpeedButton.Create(frmMensagem) Do
+        with TSpeedButton.Create(formMensagem) Do
         begin
           parent     := pnBotoes;
           if (intWidBut <> 0) then
@@ -231,6 +232,19 @@ begin
   strString := AnsiReplaceStr(strString, #13, '');
   if (AnsiReplaceText(strString, ' ', '') = '') then
     Result := True;
+end;
+
+function Crypt(vString: string): string;
+var
+  i, ordem: integer;
+begin
+  Result := '';
+  for i := 1 to Length(vString) do
+  begin
+    ordem := Ord(vString[i]);
+    ordem += 3;
+    Result += Chr(ordem);
+  end;
 end;
 
 end.

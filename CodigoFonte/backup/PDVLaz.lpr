@@ -10,9 +10,9 @@ uses
   athreads,
   {$ENDIF}
   Interfaces, // this includes the LCL widgetset
-  Forms, untPDVLaz, lazcontrols, rxnew, untFormCadastroPadrao, untFuncoes, 
-  untFrmMensagem, untFormCadastro, untDmLPDV, ufrmsplash, crt
-  { you can add units after this };
+  Forms, untPDVLaz, lazcontrols, rxnew, untFormCadastroPadrao, untFuncoes,
+  Controls, untFormMensagem, untFormCadastro, untDmLPDV, ufrmsplash, crt,
+  ufrmacesso, untformcadastroempresas, untDataBase;
 
 {$R *.res}
 
@@ -20,10 +20,7 @@ begin
   RequireDerivedFormResource:=True;
   Application.Scaled:=True;
   Application.Initialize;
-  Application.CreateForm(TFormPDVLaz, FormPDVLaz);
-  Application.CreateForm(TFormCadastroPadrao, FormCadastroPadrao);
-  Application.CreateForm(TFrmMensagem, FrmMensagem);
-  Application.CreateForm(TFormCadastro, FormCadastro);
+
   Application.CreateForm(TDmLPDV, DmLPDV);
   with TfrmSplash.Create(Nil) do
   try
@@ -41,6 +38,19 @@ begin
   finally
     Free;
   end;
-  Application.Run;
+  with Tfrmacesso.Create(Nil) do
+  try
+    if ShowModal = mrCancel then
+       Application.Terminate
+    else begin
+        Application.CreateForm(TFormPDVLaz, FormPDVLaz);
+        Application.CreateForm(TFormCadastroEmpresas, FormCadastroEmpresas);
+        Application.CreateForm(TFormDataBase, FormDataBase);
+        Application.Run;
+    end;
+  finally
+    Free;
+  end;
+
 end.
 
