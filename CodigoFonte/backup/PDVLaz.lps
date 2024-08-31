@@ -34,8 +34,7 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="untFormCadastroPadrao"/>
-        <IsVisibleTab Value="True"/>
-        <TopLine Value="101"/>
+        <TopLine Value="104"/>
         <CursorPos X="10" Y="119"/>
         <UsageCount Value="56"/>
         <Loaded Value="True"/>
@@ -77,15 +76,16 @@
         <ComponentName Value="FormCadastro"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="untFormCadastro"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="5"/>
-        <CursorPos X="23" Y="6"/>
+        <TopLine Value="29"/>
+        <CursorPos X="3" Y="44"/>
         <UsageCount Value="24"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="11">
+    <JumpHistory HistoryIndex="14">
       <Position>
         <Filename Value="Cadastros\untformcadastropadrao.pas"/>
         <Caret Line="239" Column="4" TopLine="236"/>
@@ -132,6 +132,18 @@
       <Position>
         <Filename Value="untpdvlaz.pas"/>
         <Caret Line="45" Column="31" TopLine="29"/>
+      </Position>
+      <Position>
+        <Filename Value="Cadastros\untformcadastro.pas"/>
+        <Caret Line="6" Column="23" TopLine="5"/>
+      </Position>
+      <Position>
+        <Filename Value="Cadastros\untformcadastro.pas"/>
+        <Caret Line="45" Column="3" TopLine="30"/>
+      </Position>
+      <Position>
+        <Filename Value="Cadastros\untformcadastro.pas"/>
+        <Caret Line="44" Column="3" TopLine="29"/>
       </Position>
     </JumpHistory>
     <RunParams>
