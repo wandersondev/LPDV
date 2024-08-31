@@ -5,7 +5,8 @@ unit untFuncoes;
 interface
 
 uses
-  Classes, SysUtils, StrUtils,Graphics, Forms,Dialogs, controls, ExtCtrls, Buttons;
+  Classes, SysUtils, StrUtils,Graphics, Forms,Dialogs, controls, ExtCtrls, Buttons, IniFiles;
+
 function fMensagem(strTitulo: String;
                    strMensag: String;
                    arrOpcoes: Array Of String;
@@ -17,9 +18,12 @@ procedure pCriarFormularios(Classe: TComponentClass; Var frmForm);
 procedure pMsgErro(const strMsg: String);
 function fEmptyStr(strString: String): Boolean;
 function Crypt(vString: String) : String;
+procedure LeConfiguracaoBanco;
+function LeArquivoIni(arquivo,secao, valor: String):String;
+
 
 implementation
-      uses untFormMensagem;
+      uses untFormMensagem, untConstantes, untDM;
 
 function fMensagem(strTitulo: String; strMensag: String;
   arrOpcoes: array of String; intFocBot: Integer; blnSaiEsc: Boolean;
@@ -245,6 +249,35 @@ begin
     ordem += 3;
     Result += Chr(ordem);
   end;
+end;
+
+procedure LeConfiguracaoBanco;
+begin
+  try
+    if(FileExists(DADOS_CONEXAO))then
+    begin
+      tipo       := LeArquivoIni(DADOS_CONEXAO, 'DADOS','TIPO');
+      banco      := LeArquivoIni(DADOS_CONEXAO, 'DADOS','BANCO');
+      ip         := LeArquivoIni(DADOS_CONEXAO, 'DADOS','IP');
+      usuario    := LeArquivoIni(DADOS_CONEXAO, 'DADOS','USUARIO');
+      senha      := LeArquivoIni(DADOS_CONEXAO, 'DADOS','SENHA');
+    end;
+  except
+
+  end;
+end;
+
+function LeArquivoIni(arquivo, secao, valor: String): String;
+var
+  iniArq: TIniFile;
+begin
+  iniArq := TIniFile.Create(arquivo);
+  try
+    Result := iniArq.ReadString(secao, valor,'Default');
+  finally
+    iniArq.Free;
+  end;
+
 end;
 
 end.

@@ -38,7 +38,7 @@ implementation
 
 procedure Tfrmacesso.FormShow(Sender: TObject);
 begin
-   with DmLPDV.CriaQuery do
+   with DM.CriaQuery do
    try
      Close;
      SQL.Text:= 'select * from empresas';
@@ -62,7 +62,7 @@ end;
 
 procedure Tfrmacesso.BtnEntrarClick(Sender: TObject);
 begin
-  With DmLPDV.CriaQuery do
+  With DM.CriaQuery do
   try
      Close;
      SQL.Text:='select * from usuarios';

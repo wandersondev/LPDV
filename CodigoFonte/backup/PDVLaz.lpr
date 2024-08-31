@@ -11,8 +11,8 @@ uses
   {$ENDIF}
   Interfaces, // this includes the LCL widgetset
   Forms, untPDVLaz, lazcontrols, rxnew, untFormCadastroPadrao, untFuncoes,
-  Controls, untFormMensagem, untFormCadastro, untDmLPDV, ufrmsplash, crt,
-  ufrmacesso, untformcadastroempresas, untDataBase;
+  Controls, untFormMensagem, untFormCadastro, untDM, ufrmsplash, crt,
+  ufrmacesso, untformcadastroempresas, untformdatabase;
 
 {$R *.res}
 
@@ -20,8 +20,7 @@ begin
   RequireDerivedFormResource:=True;
   Application.Scaled:=True;
   Application.Initialize;
-
-  Application.CreateForm(TDmLPDV, DmLPDV);
+  Application.CreateForm(TDM, DM);
   with TfrmSplash.Create(Nil) do
   try
     AlphaBlend      := True;

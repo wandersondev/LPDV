@@ -57,13 +57,13 @@ object frmacesso: Tfrmacesso
   end
   object LbUsuario: TLabel
     Left = 98
-    Height = 18
+    Height = 12
     Top = 16
-    Width = 70
+    Width = 39
     Caption = 'Usuário'
     Font.CharSet = ANSI_CHARSET
-    Font.Height = -16
-    Font.Name = 'Courier New'
+    Font.Height = -9
+    Font.Name = 'Verdana'
     Font.Pitch = fpFixed
     Font.Quality = fqDraft
     ParentColor = False
@@ -71,13 +71,13 @@ object frmacesso: Tfrmacesso
   end
   object LbSenha: TLabel
     Left = 96
-    Height = 18
+    Height = 12
     Top = 60
-    Width = 50
+    Width = 31
     Caption = 'Senha'
     Font.CharSet = ANSI_CHARSET
-    Font.Height = -16
-    Font.Name = 'Courier New'
+    Font.Height = -9
+    Font.Name = 'Verdana'
     Font.Pitch = fpFixed
     Font.Quality = fqDraft
     ParentColor = False

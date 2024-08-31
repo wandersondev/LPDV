@@ -1,4 +1,4 @@
-object DmLPDV: TDmLPDV
+object DM: TDM
   OnCreate = DataModuleCreate
   OldCreateOrder = False
   Height = 332

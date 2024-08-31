@@ -6,16 +6,16 @@ interface
 
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, ExtCtrls, StdCtrls,
-  Buttons, BGRACustomDrawn;
+  Buttons, BGRACustomDrawn, BCPanel;
 
 type
 
   { TFormDataBase }
 
   TFormDataBase = class(TForm)
-    BCDPanel1: TBCDPanel;
-    BCDPanel2: TBCDPanel;
-    BCDPanel3: TBCDPanel;
+    pnTitulo: TBCDPanel;
+    pnFundo: TBCDPanel;
+    pnBarra: TBCDPanel;
     BitBtn2: TBitBtn;
     btnConfirmar: TBitBtn;
     cbxTipo: TComboBox;
@@ -32,6 +32,7 @@ type
     lbBanco2: TLabel;
     lbBanco3: TLabel;
     procedure btnConfirmarClick(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
   private
 
   public
@@ -43,6 +44,8 @@ var
 
 implementation
 
+uses untFuncoes, untDM;
+
 {$R *.lfm}
 
 { TFormDataBase }
@@ -51,6 +54,17 @@ procedure TFormDataBase.btnConfirmarClick(Sender: TObject);
 begin
   ShowMessage('Gravar arquivo');
 end;
+
+procedure TFormDataBase.FormCreate(Sender: TObject);
+begin
+  leConfiguracaoBanco;
+  cbxTipo.Text   := tipo;
+  edtBanco.Text  := banco;
+  edtIP.Text     := ip;
+  edtUsuario.Text:= usuario;
+  edtSenha.Text  := senha;
+end;
+
 
 initialization
 Classes.RegisterClass(TFormDataBase);

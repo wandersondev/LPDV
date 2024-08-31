@@ -1,7 +1,7 @@
 object FormDataBase: TFormDataBase
-  Left = 613
+  Left = 434
   Height = 239
-  Top = 274
+  Top = 257
   Width = 289
   Caption = 'Configuração: Banco de Dados'
   ClientHeight = 239
@@ -930,14 +930,15 @@ object FormDataBase: TFormDataBase
     8000FF0A8000FE390001FE390000FF0A0000FF0F0000FE5D0000FA9C0000F4AF
     0000F9960000FE4B0000FD8D
   }
+  OnCreate = FormCreate
   LCLVersion = '3.4.0.0'
-  object BCDPanel1: TBCDPanel
+  object pnTitulo: TBCDPanel
     Left = 0
     Height = 34
     Top = 0
     Width = 289
     Align = alTop
-    Caption = 'BCDPanel1'
+    Caption = 'pnTitulo'
     ClientHeight = 34
     ClientWidth = 289
     TabOrder = 0
@@ -953,13 +954,12 @@ object FormDataBase: TFormDataBase
       ParentFont = False
     end
   end
-  object BCDPanel2: TBCDPanel
+  object pnFundo: TBCDPanel
     Left = 0
     Height = 158
     Top = 34
     Width = 289
     Align = alTop
-    Caption = 'BCDPanel2'
     ClientHeight = 158
     ClientWidth = 289
     TabOrder = 1
@@ -1068,13 +1068,13 @@ object FormDataBase: TFormDataBase
       TabOrder = 4
     end
   end
-  object BCDPanel3: TBCDPanel
+  object pnBarra: TBCDPanel
     Left = 0
     Height = 50
     Top = 189
     Width = 289
     Align = alBottom
-    Caption = 'BCDPanel3'
+    Caption = 'pnBarra'
     ClientHeight = 50
     ClientWidth = 289
     TabOrder = 2

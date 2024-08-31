@@ -9,9 +9,9 @@ uses
 
 type
 
-  { TDmLPDV }
+  { TDM }
 
-  TDmLPDV = class(TDataModule)
+  TDM = class(TDataModule)
     Conexao: TSQLConnector;
     qryEmpresas: TSQLQuery;
     qryTerminais: TSQLQuery;
@@ -24,7 +24,7 @@ type
   end;
 
 var
-  DmLPDV: TDmLPDV;
+  DM: TDM;
 
 implementation
 
@@ -32,9 +32,9 @@ uses untformdatabase, untcriaforms;
 
 {$R *.lfm}
 
-{ TDmLPDV }
+{ TDM }
 
-procedure TDmLPDV.DataModuleCreate(Sender: TObject);
+procedure TDM.DataModuleCreate(Sender: TObject);
 var
   frm: TCriaForm;
 begin
@@ -59,10 +59,11 @@ begin
               end;
          end;
        finally
+         Free;
        end;
 end;
 
-function TDmLPDV.CriaQuery: TSQLQuery;
+function TDM.CriaQuery: TSQLQuery;
 begin
      Result:= TSQLQuery.Create(Nil);
      Result.Options    := Result.Options + [sqoAutoCommit, sqoKeepOpenOnCommit];
