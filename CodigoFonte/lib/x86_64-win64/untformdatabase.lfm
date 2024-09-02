@@ -964,25 +964,11 @@ object FormDataBase: TFormDataBase
     ClientWidth = 289
     TabOrder = 1
     object Image1: TImage
-      Left = 264
-      Height = 20
-      Top = 5
-      Width = 16
-      Images = ImageListTipos
-    end
-    object cbxTipo: TComboBox
       Left = 72
       Height = 20
-      Top = 5
-      Width = 186
-      Enabled = False
-      ItemHeight = 12
-      ItemIndex = 0
-      Items.Strings = (
-        'PostgreSQL'
-      )
-      TabOrder = 0
-      Text = 'PostgreSQL'
+      Top = 8
+      Width = 16
+      Images = ImageListTipos
     end
     object Label1: TLabel
       Left = 23
@@ -1044,28 +1030,39 @@ object FormDataBase: TFormDataBase
       Height = 20
       Top = 33
       Width = 184
-      TabOrder = 1
+      TabOrder = 0
     end
     object edtIP: TEdit
       Left = 72
       Height = 20
       Top = 61
       Width = 184
-      TabOrder = 2
+      TabOrder = 1
     end
     object edtUsuario: TEdit
       Left = 72
       Height = 20
       Top = 89
       Width = 184
-      TabOrder = 3
+      TabOrder = 2
     end
     object edtSenha: TEdit
       Left = 72
       Height = 20
       Top = 117
       Width = 184
-      TabOrder = 4
+      TabOrder = 3
+    end
+    object lbTipo: TLabel
+      Left = 104
+      Height = 12
+      Top = 8
+      Width = 61
+      Caption = 'PostgreSQL'
+      Font.Color = clWhite
+      Font.Height = -9
+      Font.Name = 'Verdana'
+      ParentFont = False
     end
   end
   object pnBarra: TBCDPanel
@@ -1103,8 +1100,8 @@ object FormDataBase: TFormDataBase
     end
   end
   object ImageListTipos: TImageList
-    Left = 16
-    Top = 192
+    Left = 24
+    Top = 184
     Bitmap = {
       4C7A010000001000000010000000E00200000000000078DA8D92494C53511486
       5117EAC28D1BA371EBC2B50CA2200B4083139110179A88C40904A18641402480

@@ -21,6 +21,7 @@ begin
   Application.Scaled:=True;
   Application.Initialize;
   Application.CreateForm(TDM, DM);
+  Application.CreateForm(TFormPDVLaz, FormPDVLaz);
   with TfrmSplash.Create(Nil) do
   try
     AlphaBlend      := True;
@@ -42,9 +43,6 @@ begin
     if ShowModal = mrCancel then
        Application.Terminate
     else begin
-        Application.CreateForm(TFormPDVLaz, FormPDVLaz);
-        Application.CreateForm(TFormCadastroEmpresas, FormCadastroEmpresas);
-        Application.CreateForm(TFormDataBase, FormDataBase);
         Application.Run;
     end;
   finally

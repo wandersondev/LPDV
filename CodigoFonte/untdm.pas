@@ -60,10 +60,13 @@ begin
                 Connected    := True;
               except
                 ShowMessage('erro ao conectar com o banco de daddos. Verifique os dados da conexão: '+ DADOS_CONEXAO);
-                frm := TCriaForm.Create;
-                frm.CreateForm('TFormDataBase');
                 Halt;
               end;
+         end
+         else
+         begin
+              frm := TCriaForm.Create;
+              frm.CreateForm('TFormDataBase');
          end;
        finally
          Free;
