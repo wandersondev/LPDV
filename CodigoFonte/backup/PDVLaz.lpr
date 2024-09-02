@@ -12,7 +12,7 @@ uses
   Interfaces, // this includes the LCL widgetset
   Forms, untPDVLaz, lazcontrols, rxnew, untFormCadastroPadrao, untFuncoes,
   Controls, untFormMensagem, untFormCadastro, untDM, ufrmsplash, crt,
-  ufrmacesso, untformcadastroempresas, untformdatabase;
+  ufrmacesso, untformcadastroempresas, untformdatabase, untConstantes;
 
 {$R *.res}
 
@@ -21,6 +21,7 @@ begin
   Application.Scaled:=True;
   Application.Initialize;
   Application.CreateForm(TDM, DM);
+  Application.CreateForm(TFormPDVLaz, FormPDVLaz);
   with TfrmSplash.Create(Nil) do
   try
     AlphaBlend      := True;
@@ -42,14 +43,10 @@ begin
     if ShowModal = mrCancel then
        Application.Terminate
     else begin
-        Application.CreateForm(TFormPDVLaz, FormPDVLaz);
-        Application.CreateForm(TFormCadastroEmpresas, FormCadastroEmpresas);
-        Application.CreateForm(TFormDataBase, FormDataBase);
         Application.Run;
     end;
   finally
     Free;
   end;
-
 end.
 

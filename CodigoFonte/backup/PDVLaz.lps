@@ -9,15 +9,9 @@
         <Filename Value="PDVLaz.lpr"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
-<<<<<<< HEAD
-        <TopLine Value="22"/>
-        <CursorPos X="58" Y="44"/>
-        <UsageCount Value="23"/>
-=======
-        <TopLine Value="15"/>
-        <CursorPos X="70" Y="15"/>
-        <UsageCount Value="111"/>
->>>>>>> 1120e646e79bddd690f97fefc4e9d2ec8d95a707
+        <TopLine Value="33"/>
+        <CursorPos X="7" Y="50"/>
+        <UsageCount Value="20"/>
       </Unit>
       <Unit>
         <Filename Value="untpdvlaz.pas"/>
@@ -26,16 +20,8 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="untPDVLaz"/>
-<<<<<<< HEAD
-        <TopLine Value="13"/>
-        <UsageCount Value="23"/>
-=======
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="20"/>
-        <CursorPos X="38" Y="32"/>
-        <UsageCount Value="111"/>
->>>>>>> 1120e646e79bddd690f97fefc4e9d2ec8d95a707
+        <UsageCount Value="20"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -46,27 +32,13 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="untFormCadastroPadrao"/>
-<<<<<<< HEAD
-        <UsageCount Value="23"/>
-=======
-        <EditorIndex Value="-1"/>
-        <TopLine Value="26"/>
-        <CursorPos X="89" Y="191"/>
-        <UsageCount Value="111"/>
->>>>>>> 1120e646e79bddd690f97fefc4e9d2ec8d95a707
+        <UsageCount Value="20"/>
       </Unit>
       <Unit>
         <Filename Value="Bibliotecas\untfuncoes.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="untFuncoes"/>
-<<<<<<< HEAD
-        <UsageCount Value="23"/>
-=======
-        <EditorIndex Value="-1"/>
-        <TopLine Value="253"/>
-        <CursorPos X="52" Y="268"/>
-        <UsageCount Value="111"/>
->>>>>>> 1120e646e79bddd690f97fefc4e9d2ec8d95a707
+        <UsageCount Value="20"/>
       </Unit>
       <Unit>
         <Filename Value="Cadastros\untformmensagem.pas"/>
@@ -75,13 +47,7 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="untFormMensagem"/>
-<<<<<<< HEAD
-        <UsageCount Value="23"/>
-=======
-        <EditorIndex Value="-1"/>
-        <CursorPos X="30" Y="12"/>
-        <UsageCount Value="111"/>
->>>>>>> 1120e646e79bddd690f97fefc4e9d2ec8d95a707
+        <UsageCount Value="20"/>
       </Unit>
       <Unit>
         <Filename Value="Cadastros\untformcadastro.pas"/>
@@ -90,15 +56,7 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="untFormCadastro"/>
-        <EditorIndex Value="-1"/>
-<<<<<<< HEAD
-        <WindowIndex Value="-1"/>
-        <UsageCount Value="23"/>
-=======
-        <TopLine Value="68"/>
-        <CursorPos X="72" Y="92"/>
-        <UsageCount Value="111"/>
->>>>>>> 1120e646e79bddd690f97fefc4e9d2ec8d95a707
+        <UsageCount Value="20"/>
       </Unit>
       <Unit>
         <Filename Value="untdm.pas"/>
@@ -107,17 +65,11 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="DataModule"/>
         <UnitName Value="untDM"/>
-<<<<<<< HEAD
         <IsVisibleTab Value="True"/>
-        <EditorIndex Value="1"/>
-        <UsageCount Value="23"/>
-=======
-        <TopLine Value="58"/>
-        <CursorPos X="15" Y="67"/>
-        <UsageCount Value="111"/>
->>>>>>> 1120e646e79bddd690f97fefc4e9d2ec8d95a707
+        <EditorIndex Value="2"/>
+        <TopLine Value="48"/>
+        <UsageCount Value="20"/>
         <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="Cadastros\untformcadastroempresas.pas"/>
@@ -125,13 +77,7 @@
         <ComponentName Value="FormCadastroEmpresas"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-<<<<<<< HEAD
-        <UsageCount Value="23"/>
-=======
-        <EditorIndex Value="-1"/>
-        <TopLine Value="2"/>
-        <UsageCount Value="105"/>
->>>>>>> 1120e646e79bddd690f97fefc4e9d2ec8d95a707
+        <UsageCount Value="20"/>
       </Unit>
       <Unit>
         <Filename Value="Utilitarios\untformdatabase.pas"/>
@@ -139,154 +85,23 @@
         <ComponentName Value="FormDataBase"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="2"/>
-<<<<<<< HEAD
-        <CursorPos X="57" Y="13"/>
-        <UsageCount Value="23"/>
-=======
-        <TopLine Value="50"/>
-        <CursorPos X="9" Y="67"/>
-        <UsageCount Value="99"/>
->>>>>>> 1120e646e79bddd690f97fefc4e9d2ec8d95a707
+        <TopLine Value="66"/>
+        <UsageCount Value="20"/>
         <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="Bibliotecas\untconstantes.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="untConstantes"/>
-<<<<<<< HEAD
-        <UsageCount Value="23"/>
-=======
-        <EditorIndex Value="-1"/>
-        <CursorPos X="5" Y="7"/>
-        <UsageCount Value="95"/>
-      </Unit>
-      <Unit>
-        <Filename Value="Bibliotecas\untcriaforms.pas"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="120"/>
-        <CursorPos X="45" Y="131"/>
-        <UsageCount Value="11"/>
-      </Unit>
-      <Unit>
-        <Filename Value="Cadastros\ufrmcadastroprodutos.pas"/>
-        <ComponentName Value="frmcadastroprodutos"/>
-        <HasResources Value="True"/>
-        <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="71"/>
-        <CursorPos X="41" Y="81"/>
-        <UsageCount Value="3"/>
-      </Unit>
-      <Unit>
-        <Filename Value="C:\lazarus\fpc\3.2.2\source\rtl\win\wininc\redef.inc"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="792"/>
-        <CursorPos X="10" Y="798"/>
-        <UsageCount Value="11"/>
-      </Unit>
-      <Unit>
-        <Filename Value="C:\lazarus\fpc\3.2.2\source\rtl\win\wininc\ascdef.inc"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="186"/>
-        <CursorPos X="10" Y="192"/>
-        <UsageCount Value="11"/>
-      </Unit>
-      <Unit>
-        <Filename Value="ufrmsplash.pas"/>
-        <ComponentName Value="frmSplash"/>
-        <HasResources Value="True"/>
-        <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="14"/>
-        <CursorPos X="117" Y="28"/>
-        <UsageCount Value="54"/>
-      </Unit>
-      <Unit>
-        <Filename Value="ufrmacesso.pas"/>
-        <ComponentName Value="frmacesso"/>
-        <HasResources Value="True"/>
-        <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="10"/>
-        <CursorPos X="14" Y="11"/>
-        <UsageCount Value="53"/>
->>>>>>> 1120e646e79bddd690f97fefc4e9d2ec8d95a707
-      </Unit>
-      <Unit>
-        <Filename Value="C:\Users\wandersondev\AppData\Local\lazarus\onlinepackagemanager\packages\BGRAControls\bgraimagemanipulation.pas"/>
-        <UnitName Value="BGRAImageManipulation"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="1300"/>
-        <CursorPos X="18" Y="1307"/>
-        <UsageCount Value="10"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
-      </Unit>
-      <Unit>
-        <Filename Value="Utilitarios\untformdatabase.lfm"/>
-        <EditorIndex Value="-1"/>
-<<<<<<< HEAD
-        <UsageCount Value="11"/>
-        <DefaultSyntaxHighlighter Value="LFM"/>
-      </Unit>
-      <Unit>
-        <Filename Value="D:\gestor_1_0_0\source\uFrmPrincipal.lfm"/>
-        <HasResources Value="True"/>
-        <EditorIndex Value="-1"/>
-        <UsageCount Value="10"/>
-        <DefaultSyntaxHighlighter Value="LFM"/>
+        <UsageCount Value="20"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="-1"/>
-=======
-        <TopLine Value="151"/>
-        <CursorPos X="64" Y="260"/>
-        <UsageCount Value="4"/>
-      </Unit>
-      <Unit>
-        <Filename Value="C:\lazarus\lcl\include\control.inc"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="3600"/>
-        <CursorPos Y="3612"/>
-        <UsageCount Value="10"/>
-      </Unit>
-    </Units>
-    <JumpHistory HistoryIndex="7">
+    <JumpHistory>
       <Position>
         <Filename Value="untdm.pas"/>
-        <Caret Line="69" Column="48" TopLine="49"/>
-      </Position>
-      <Position>
-        <Filename Value="Utilitarios\untformdatabase.pas"/>
-        <Caret Line="54" Column="110" TopLine="50"/>
-      </Position>
-      <Position>
-        <Filename Value="Utilitarios\untformdatabase.pas"/>
-        <Caret Line="63" Column="42" TopLine="46"/>
-      </Position>
-      <Position>
-        <Filename Value="Utilitarios\untformdatabase.pas"/>
-        <Caret Line="62" Column="42" TopLine="45"/>
-      </Position>
-      <Position>
-        <Filename Value="untdm.pas"/>
-        <Caret Line="57" Column="33" TopLine="52"/>
-      </Position>
-      <Position>
-        <Filename Value="Utilitarios\untformdatabase.pas"/>
-        <Caret Line="61" Column="46" TopLine="47"/>
-      </Position>
-      <Position>
-        <Filename Value="Utilitarios\untformdatabase.pas"/>
-        <Caret Line="67" Column="9" TopLine="50"/>
-      </Position>
-      <Position>
-        <Filename Value="untdm.pas"/>
-        <Caret Line="67" Column="15" TopLine="58"/>
+        <Caret TopLine="48"/>
       </Position>
     </JumpHistory>
->>>>>>> 1120e646e79bddd690f97fefc4e9d2ec8d95a707
     <RunParams>
       <FormatVersion Value="2"/>
       <Modes ActiveMode=""/>
