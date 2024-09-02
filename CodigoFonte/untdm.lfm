@@ -2,14 +2,27 @@ object DM: TDM
   OnCreate = DataModuleCreate
   OldCreateOrder = False
   Height = 332
+<<<<<<< HEAD
   HorizontalOffset = 524
   VerticalOffset = 182
+=======
+  HorizontalOffset = 512
+  VerticalOffset = 125
+>>>>>>> 1120e646e79bddd690f97fefc4e9d2ec8d95a707
   Width = 565
   object Conexao: TSQLConnector
     Connected = False
     LoginPrompt = False
+    DatabaseName = 'postgres'
     KeepConnection = True
+    Password = 'postgres'
     Transaction = Transacao
+<<<<<<< HEAD
+=======
+    UserName = 'postgres'
+    HostName = 'localhost'
+    ConnectorType = 'PostgreSQL'
+>>>>>>> 1120e646e79bddd690f97fefc4e9d2ec8d95a707
     Left = 64
     Top = 16
   end

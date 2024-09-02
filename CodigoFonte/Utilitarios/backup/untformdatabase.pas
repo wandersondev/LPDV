@@ -13,6 +13,7 @@ type
   { TFormDataBase }
 
   TFormDataBase = class(TForm)
+    lbTipo: TLabel;
     pnTitulo: TBCDPanel;
     pnFundo: TBCDPanel;
     pnBarra: TBCDPanel;
@@ -42,7 +43,7 @@ var
 
 implementation
 
-uses untFuncoes, untDM;
+uses untFuncoes, untConstantes, untDM;
 
 {$R *.lfm}
 
@@ -50,7 +51,19 @@ uses untFuncoes, untDM;
 
 procedure TFormDataBase.btnConfirmarClick(Sender: TObject);
 begin
-  ShowMessage('Gravar arquivo');
+  try
+    with TStringList.Create do
+    begin
+      Values['BANCO']       := edtBanco.Text;
+      Values['IP']          := edtIP.Text;
+      Values['TIPO']        := lbTipo.Caption;
+      Values['USUARIO']     := edtUsuario.Text;
+      Values['SENHA']       := edtSenha.Text;
+      SaveToFile(DADOS_CONEXAO);
+    end;
+  finally
+    FreeAndNil(Self);
+  end;
 end;
 
 procedure TFormDataBase.FormCreate(Sender: TObject);
