@@ -26,7 +26,7 @@ var
   FormPDVLaz: TFormPDVLaz;
 
 implementation
-   uses untFormCadastroPadrao, untFormCadastro, ufrmcadastroprodutos;
+   uses untFormCadastroPadrao, untFormCadastro;
 {$R *.lfm}
 
 { TFormPDVLaz }
@@ -42,10 +42,12 @@ begin
 end;
 
 procedure TFormPDVLaz.Button2Click(Sender: TObject);
-var FormCadastro: TFormCadastro;
+   var frm: TCriaForm;
 begin
-  FormCadastro := TFormCadastro.Create(Self);
-  FormCadastro.Show;
+  // identificar qual form está ativo dentro do FormPrincipal
+  // fechar este form e em seguida rodar o código abaixo
+  frm := TCriaForm.Create;
+  frm.CreateForm('TFormCadastroPadrao');
 end;
 
 end.

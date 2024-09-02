@@ -20,8 +20,16 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="untPDVLaz"/>
+<<<<<<< HEAD
         <EditorIndex Value="1"/>
         <UsageCount Value="20"/>
+=======
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="20"/>
+        <CursorPos X="38" Y="32"/>
+        <UsageCount Value="111"/>
+>>>>>>> 6959cb0d699c86c648c44bde7788f13994bcf71e
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -93,7 +101,79 @@
         <Filename Value="Bibliotecas\untconstantes.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="untConstantes"/>
+<<<<<<< HEAD
         <UsageCount Value="20"/>
+=======
+        <EditorIndex Value="-1"/>
+        <CursorPos X="5" Y="7"/>
+        <UsageCount Value="95"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Bibliotecas\untcriaforms.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="120"/>
+        <CursorPos X="45" Y="131"/>
+        <UsageCount Value="11"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Cadastros\ufrmcadastroprodutos.pas"/>
+        <ComponentName Value="frmcadastroprodutos"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="71"/>
+        <CursorPos X="41" Y="81"/>
+        <UsageCount Value="3"/>
+      </Unit>
+      <Unit>
+        <Filename Value="C:\lazarus\fpc\3.2.2\source\rtl\win\wininc\redef.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="792"/>
+        <CursorPos X="10" Y="798"/>
+        <UsageCount Value="11"/>
+      </Unit>
+      <Unit>
+        <Filename Value="C:\lazarus\fpc\3.2.2\source\rtl\win\wininc\ascdef.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="186"/>
+        <CursorPos X="10" Y="192"/>
+        <UsageCount Value="11"/>
+      </Unit>
+      <Unit>
+        <Filename Value="ufrmsplash.pas"/>
+        <ComponentName Value="frmSplash"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="14"/>
+        <CursorPos X="117" Y="28"/>
+        <UsageCount Value="54"/>
+      </Unit>
+      <Unit>
+        <Filename Value="ufrmacesso.pas"/>
+        <ComponentName Value="frmacesso"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="10"/>
+        <CursorPos X="14" Y="11"/>
+        <UsageCount Value="53"/>
+      </Unit>
+      <Unit>
+        <Filename Value="C:\lazarus\fpc\3.2.2\source\packages\fcl-base\src\inifiles.pp"/>
+        <UnitName Value="IniFiles"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="151"/>
+        <CursorPos X="64" Y="260"/>
+        <UsageCount Value="4"/>
+      </Unit>
+      <Unit>
+        <Filename Value="C:\lazarus\lcl\include\control.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="3600"/>
+        <CursorPos Y="3612"/>
+        <UsageCount Value="10"/>
+>>>>>>> 6959cb0d699c86c648c44bde7788f13994bcf71e
       </Unit>
     </Units>
     <JumpHistory>
