@@ -2,10 +2,10 @@ object FormDataBase: TFormDataBase
   Left = 434
   Height = 239
   Top = 257
-  Width = 289
+  Width = 300
   Caption = 'Configuração: Banco de Dados'
   ClientHeight = 239
-  ClientWidth = 289
+  ClientWidth = 300
   Font.Height = -9
   Font.Name = 'Verdana'
   Icon.Data = {
@@ -936,11 +936,11 @@ object FormDataBase: TFormDataBase
     Left = 0
     Height = 34
     Top = 0
-    Width = 289
+    Width = 300
     Align = alTop
     Caption = 'pnTitulo'
     ClientHeight = 34
-    ClientWidth = 289
+    ClientWidth = 300
     TabOrder = 0
     object Label2: TLabel
       Left = 23
@@ -958,10 +958,10 @@ object FormDataBase: TFormDataBase
     Left = 0
     Height = 158
     Top = 34
-    Width = 289
+    Width = 300
     Align = alTop
     ClientHeight = 158
-    ClientWidth = 289
+    ClientWidth = 300
     TabOrder = 1
     object Image1: TImage
       Left = 72
@@ -1069,11 +1069,11 @@ object FormDataBase: TFormDataBase
     Left = 0
     Height = 50
     Top = 189
-    Width = 289
+    Width = 300
     Align = alBottom
     Caption = 'pnBarra'
     ClientHeight = 50
-    ClientWidth = 289
+    ClientWidth = 300
     TabOrder = 2
     object btnConfirmar: TBitBtn
       Left = 80

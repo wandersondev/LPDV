@@ -11,7 +11,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="15"/>
         <CursorPos X="70" Y="15"/>
-        <UsageCount Value="111"/>
+        <UsageCount Value="112"/>
       </Unit>
       <Unit>
         <Filename Value="untpdvlaz.pas"/>
@@ -20,11 +20,10 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="untPDVLaz"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
         <TopLine Value="20"/>
-        <CursorPos X="38" Y="32"/>
-        <UsageCount Value="111"/>
+        <CursorPos X="115" Y="30"/>
+        <UsageCount Value="112"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -38,7 +37,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="26"/>
         <CursorPos X="89" Y="191"/>
-        <UsageCount Value="111"/>
+        <UsageCount Value="112"/>
       </Unit>
       <Unit>
         <Filename Value="Bibliotecas\untfuncoes.pas"/>
@@ -47,7 +46,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="253"/>
         <CursorPos X="52" Y="268"/>
-        <UsageCount Value="111"/>
+        <UsageCount Value="112"/>
       </Unit>
       <Unit>
         <Filename Value="Cadastros\untformmensagem.pas"/>
@@ -58,7 +57,7 @@
         <UnitName Value="untFormMensagem"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="30" Y="12"/>
-        <UsageCount Value="111"/>
+        <UsageCount Value="112"/>
       </Unit>
       <Unit>
         <Filename Value="Cadastros\untformcadastro.pas"/>
@@ -70,7 +69,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="68"/>
         <CursorPos X="72" Y="92"/>
-        <UsageCount Value="111"/>
+        <UsageCount Value="112"/>
       </Unit>
       <Unit>
         <Filename Value="untdm.pas"/>
@@ -79,9 +78,10 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="DataModule"/>
         <UnitName Value="untDM"/>
+        <IsVisibleTab Value="True"/>
         <TopLine Value="58"/>
-        <CursorPos X="15" Y="67"/>
-        <UsageCount Value="111"/>
+        <CursorPos X="49" Y="69"/>
+        <UsageCount Value="112"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -93,7 +93,7 @@
         <ResourceBaseClass Value="Form"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="2"/>
-        <UsageCount Value="105"/>
+        <UsageCount Value="106"/>
       </Unit>
       <Unit>
         <Filename Value="Utilitarios\untformdatabase.pas"/>
@@ -104,7 +104,7 @@
         <EditorIndex Value="2"/>
         <TopLine Value="50"/>
         <CursorPos X="9" Y="67"/>
-        <UsageCount Value="99"/>
+        <UsageCount Value="100"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -114,7 +114,7 @@
         <UnitName Value="untConstantes"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="5" Y="7"/>
-        <UsageCount Value="95"/>
+        <UsageCount Value="96"/>
       </Unit>
       <Unit>
         <Filename Value="Bibliotecas\untcriaforms.pas"/>

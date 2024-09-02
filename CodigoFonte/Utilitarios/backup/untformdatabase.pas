@@ -64,7 +64,7 @@ begin
       SaveToFile(DADOS_CONEXAO);
     end;
   finally
-    FreeAndNil(Self);
+    Free;
   end;
 end;
 
