@@ -5,7 +5,7 @@ unit untPDVLaz;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls,  untcriaforms;
 
 type
 
@@ -32,19 +32,22 @@ implementation
 { TFormPDVLaz }
 
 procedure TFormPDVLaz.Button1Click(Sender: TObject);
-   var FormCadastroPadrao: TFormCadastroPadrao;
+   var frm: TCriaForm;
 begin
   // identificar qual form está ativo dentro do FormPrincipal
   // fechar este form e em seguida rodar o código abaixo
-  FormCadastroPadrao := TFormCadastroPadrao.Create(Self);
-  FormCadastroPadrao.Show;
+  frm := TCriaForm.Create;
+  frm.CreateForm('TFormCadastro');
 
 end;
 
 procedure TFormPDVLaz.Button2Click(Sender: TObject);
-var FormCadastro: TFormCadastro;
+   var frm: TCriaForm;
 begin
-
+  // identificar qual form está ativo dentro do FormPrincipal
+  // fechar este form e em seguida rodar o código abaixo
+  frm := TCriaForm.Create;
+  frm.CreateForm('TFormCadastroPadrao');
 end;
 
 end.

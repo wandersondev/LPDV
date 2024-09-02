@@ -26,6 +26,9 @@
     </RunParams>
     <RequiredPackages>
       <Item>
+        <PackageName Value="SQLDBLaz"/>
+      </Item>
+      <Item>
         <PackageName Value="FCL"/>
       </Item>
       <Item>
@@ -74,19 +77,47 @@
         <UnitName Value="untFuncoes"/>
       </Unit>
       <Unit>
-        <Filename Value="Cadastros\untfrmmensagem.pas"/>
+        <Filename Value="Cadastros\untformmensagem.pas"/>
         <IsPartOfProject Value="True"/>
-        <ComponentName Value="FrmMensagem"/>
+        <ComponentName Value="FormMensagem"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UnitName Value="untFrmMensagem"/>
+        <UnitName Value="untFormMensagem"/>
       </Unit>
       <Unit>
         <Filename Value="Cadastros\untformcadastro.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="FormCadastro"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="untFormCadastro"/>
+      </Unit>
+      <Unit>
+        <Filename Value="untdm.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="DM"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+        <UnitName Value="untDM"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Cadastros\untformcadastroempresas.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormCadastroEmpresas"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Utilitarios\untformdatabase.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormDataBase"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Bibliotecas\untconstantes.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="untConstantes"/>
       </Unit>
     </Units>
   </ProjectOptions>
@@ -98,7 +129,7 @@
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>
-      <OtherUnitFiles Value="Cadastros;Bibliotecas"/>
+      <OtherUnitFiles Value="Cadastros;Bibliotecas;Utilitarios"/>
       <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
     </SearchPaths>
     <Linking>

@@ -10,9 +10,9 @@ uses
 
 type
 
-  { TFrmMensagem }
+  { TFormMensagem }
 
-  TFrmMensagem = class(TForm)
+  TFormMensagem = class(TForm)
     imgbotao1: TImage;
     imgbotao2: TImage;
     imgbotao3: TImage;
@@ -34,21 +34,21 @@ type
   end;
 
 var
-  FrmMensagem: TFrmMensagem;
+  FormMensagem: TFormMensagem;
 
 implementation
 
 {$R *.lfm}
 
-{ TFrmMensagem }
+{ TFormMensagem }
 
 
-procedure TFrmMensagem.EnviarParaAreaDeTransfernciaClick(Sender: TObject);
+procedure TFormMensagem.EnviarParaAreaDeTransfernciaClick(Sender: TObject);
 begin
   Clipboard.AsText := pnTitulo.Caption + #13#10 + pnMensagem.Caption;
 end;
 
-procedure TFrmMensagem.FormKeyDown(Sender: TObject; var Key: Word;
+procedure TFormMensagem.FormKeyDown(Sender: TObject; var Key: Word;
   Shift: TShiftState);
 begin
     if (Key = VK_Escape) And (blnSaiEsc) then
@@ -58,7 +58,7 @@ begin
   end;
 end;
 
-procedure TFrmMensagem.FormShow(Sender: TObject);
+procedure TFormMensagem.FormShow(Sender: TObject);
 var
   intPos: Integer;
 begin
@@ -71,7 +71,7 @@ begin
   SetForegroundWindow(Self.Handle);
 end;
 
-procedure TFrmMensagem.pOnClick(Sender: TObject);
+procedure TFormMensagem.pOnClick(Sender: TObject);
 begin
    intRetorn := (Sender As TBCButtonFocus).Tag;
    Close;

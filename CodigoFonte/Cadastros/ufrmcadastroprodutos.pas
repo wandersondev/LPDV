@@ -1,0 +1,83 @@
+unit ufrmcadastroprodutos;
+
+{$mode objfpc}{$H+}
+
+interface
+
+uses
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, ExtCtrls, StdCtrls,
+  Buttons, MaskEdit;
+
+type
+
+  { Tfrmcadastroprodutos }
+
+  Tfrmcadastroprodutos = class(TForm)
+    ComboBox1: TComboBox;
+    ComboBox2: TComboBox;
+    ComboBox3: TComboBox;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
+    Label5: TLabel;
+    Label6: TLabel;
+    LabeledEdit1: TLabeledEdit;
+    LabeledEdit2: TLabeledEdit;
+    LabeledEdit3: TLabeledEdit;
+    LabeledEdit4: TLabeledEdit;
+    LabeledEdit5: TLabeledEdit;
+    LabeledEdit6: TLabeledEdit;
+    LabeledEdit7: TLabeledEdit;
+    MaskEdit1: TMaskEdit;
+    MaskEdit2: TMaskEdit;
+    MaskEdit3: TMaskEdit;
+    SpeedButton1: TSpeedButton;
+    SpeedButton2: TSpeedButton;
+    SpeedButton3: TSpeedButton;
+    SpeedButton5: TSpeedButton;
+    procedure SpeedButton1Click(Sender: TObject);
+    procedure SpeedButton2Click(Sender: TObject);
+    procedure SpeedButton3Click(Sender: TObject);
+    procedure SpeedButton5Click(Sender: TObject);
+  private
+
+  public
+
+  end;
+
+var
+  frmcadastroprodutos: Tfrmcadastroprodutos;
+
+implementation
+
+{$R *.lfm}
+
+{ Tfrmcadastroprodutos }
+
+procedure Tfrmcadastroprodutos.SpeedButton5Click(Sender: TObject);
+begin
+  { TODO -oWanderson Santana Pinheiro : Consulta a apis que contenham dados a partir do codigo de
+  barras }
+end;
+
+procedure Tfrmcadastroprodutos.SpeedButton3Click(Sender: TObject);
+begin
+  { TODO -oWanderson Santana Pinheiro : Abre frmCadastroMarcas }
+end;
+
+procedure Tfrmcadastroprodutos.SpeedButton2Click(Sender: TObject);
+begin
+  { TODO -oWanderson Santana Pinheiro : Abre frmCadastroCategorias }
+end;
+
+procedure Tfrmcadastroprodutos.SpeedButton1Click(Sender: TObject);
+begin
+  { TODO -oWanderson Santana Pinheiro : abre frmCadastroUnidadesMedida }
+end;
+initialization
+  RegisterClass(Tfrmcadastroprodutos);
+finalization
+  UnRegisterClass(Tfrmcadastroprodutos);
+end.
+

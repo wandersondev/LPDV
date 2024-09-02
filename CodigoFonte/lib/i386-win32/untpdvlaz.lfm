@@ -6,14 +6,23 @@ object FormPDVLaz: TFormPDVLaz
   Caption = 'FormPDVLaz'
   ClientHeight = 519
   ClientWidth = 1070
-  LCLVersion = '2.2.4.0'
+  LCLVersion = '3.4.0.0'
   object Button1: TButton
-    Left = 163
-    Height = 25
-    Top = 85
-    Width = 75
-    Caption = 'Button1'
-    OnClick = Button1Click
+    Left = 8
+    Height = 65
+    Top = 0
+    Width = 144
+    Caption = 'Cadastro Modelo 1'
     TabOrder = 0
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Left = 8
+    Height = 65
+    Top = 64
+    Width = 144
+    Caption = 'Cadastro Modelo 2'
+    TabOrder = 1
+    OnClick = Button2Click
   end
 end

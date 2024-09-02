@@ -9,7 +9,7 @@ object FormCadastroPadrao: TFormCadastroPadrao
   Font.Height = -11
   Font.Name = 'Verdana'
   Font.Style = [fsBold]
-  LCLVersion = '3.4.0.0'
+  LCLVersion = '2.2.4.0'
   object pnTitulo: TBCPanel
     Left = 0
     Height = 48
@@ -497,6 +497,7 @@ object FormCadastroPadrao: TFormCadastroPadrao
           BevelOuter = bvRaised
           BevelWidth = 1
           Border.Style = bboNone
+          Caption = 'Cadastro [Padrão]'
           FontEx.Color = clDefault
           FontEx.FontQuality = fqSystemClearType
           FontEx.Shadow = False

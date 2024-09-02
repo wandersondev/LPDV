@@ -1,0 +1,5 @@
+inherited FormCadastroEmpresas: TFormCadastroEmpresas
+  Left = 366
+  Top = 119
+  Caption = 'Empresas'
+end

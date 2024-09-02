@@ -10,9 +10,9 @@ uses
   athreads,
   {$ENDIF}
   Interfaces, // this includes the LCL widgetset
-  Forms, untPDVLaz, lazcontrols, rxnew, untFormCadastroPadrao, untFuncoes, 
-untFrmMensagem, untFormCadastro
-  { you can add units after this };
+  Forms, untPDVLaz, lazcontrols, rxnew, untFormCadastroPadrao, untFuncoes,
+  Controls, untFormMensagem, untFormCadastro, untDM, ufrmsplash, crt,
+  ufrmacesso, untformcadastroempresas, untformdatabase, untConstantes;
 
 {$R *.res}
 
@@ -20,10 +20,34 @@ begin
   RequireDerivedFormResource:=True;
   Application.Scaled:=True;
   Application.Initialize;
+  Application.CreateForm(TDM, DM);
   Application.CreateForm(TFormPDVLaz, FormPDVLaz);
-  Application.CreateForm(TFormCadastroPadrao, FormCadastroPadrao);
-  Application.CreateForm(TFrmMensagem, FrmMensagem);
-  Application.CreateForm(TFormCadastro, FormCadastro);
-  Application.Run;
+  with TfrmSplash.Create(Nil) do
+  try
+    AlphaBlend      := True;
+    AlphaBlendValue := 100;
+    Position        := poScreenCenter;
+    Show;
+    while AlphaBlendValue < 255 do
+    begin
+      AlphaBlendValue:= AlphaBlendValue + 1;
+      Application.ProcessMessages;
+      Delay(50);
+    end;
+    Close;
+  finally
+    Free;
+  end;
+  with Tfrmacesso.Create(Nil) do
+  try
+    if ShowModal = mrCancel then
+       Application.Terminate
+    else begin
+        Application.Run;
+    end;
+  finally
+    Free;
+  end;
+
 end.
 

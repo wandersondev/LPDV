@@ -1,0 +1,86 @@
+object frmacesso: Tfrmacesso
+  Left = 566
+  Height = 162
+  Top = 268
+  Width = 320
+  ActiveControl = EdtUsuario
+  BorderStyle = bsSizeToolWin
+  Caption = 'Acesso'
+  ClientHeight = 162
+  ClientWidth = 320
+  Font.CharSet = ANSI_CHARSET
+  Font.Height = -9
+  Font.Name = 'Verdana'
+  Font.Pitch = fpFixed
+  Font.Quality = fqDraft
+  FormStyle = fsStayOnTop
+  OnShow = FormShow
+  Position = poScreenCenter
+  LCLVersion = '3.4.0.0'
+  object BtnEntrar: TBitBtn
+    Left = 96
+    Height = 30
+    Top = 120
+    Width = 88
+    Caption = '&Entrar'
+    Default = True
+    Kind = bkOK
+    OnClick = BtnEntrarClick
+    TabOrder = 2
+  end
+  object BtnCancelar: TBitBtn
+    Left = 183
+    Height = 30
+    Top = 120
+    Width = 115
+    Cancel = True
+    DefaultCaption = True
+    Kind = bkCancel
+    ModalResult = 2
+    TabOrder = 3
+  end
+  object EdtUsuario: TEdit
+    Left = 96
+    Height = 20
+    Top = 32
+    Width = 202
+    TabOrder = 0
+  end
+  object EdtSenha: TEdit
+    Left = 96
+    Height = 20
+    Top = 76
+    Width = 202
+    EchoMode = emPassword
+    PasswordChar = '*'
+    TabOrder = 1
+  end
+  object LbUsuario: TLabel
+    Left = 98
+    Height = 12
+    Top = 16
+    Width = 39
+    Caption = 'Usuário'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -9
+    Font.Name = 'Verdana'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object LbSenha: TLabel
+    Left = 96
+    Height = 12
+    Top = 60
+    Width = 31
+    Caption = 'Senha'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -9
+    Font.Name = 'Verdana'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+end

@@ -5,7 +5,8 @@ unit untFuncoes;
 interface
 
 uses
-  Classes, SysUtils, Graphics, Forms,Dialogs, controls, ExtCtrls, Buttons;
+  Classes, SysUtils, StrUtils,Graphics, Forms,Dialogs, controls, ExtCtrls, Buttons, IniFiles;
+
 function fMensagem(strTitulo: String;
                    strMensag: String;
                    arrOpcoes: Array Of String;
@@ -16,9 +17,13 @@ function fMensagem(strTitulo: String;
 procedure pCriarFormularios(Classe: TComponentClass; Var frmForm);
 procedure pMsgErro(const strMsg: String);
 function fEmptyStr(strString: String): Boolean;
+function Crypt(vString: String) : String;
+procedure LeConfiguracaoBanco;
+function LeArquivoIni(arquivo,secao, valor: String):String;
+
 
 implementation
-      uses untFrmMensagem;
+      uses untFormMensagem, untConstantes, untDM;
 
 function fMensagem(strTitulo: String; strMensag: String;
   arrOpcoes: array of String; intFocBot: Integer; blnSaiEsc: Boolean;
@@ -58,8 +63,8 @@ begin
      (intFocBot > intQtdOpc) then
     intFocBot := 1;
   try
-    pCriarFormularios(TFrmMensagem, FrmMensagem);
-    With FrmMensagem Do
+    pCriarFormularios(TFormMensagem, FormMensagem);
+    With FormMensagem Do
     Begin
       if (strTitulo = '') then
         strTitulo := 'Aviso';
@@ -69,7 +74,7 @@ begin
       pnMensagem.Caption := strMensag;
       if (intQtdOpc = 1) then
       begin
-        with TSpeedButton.Create(frmMensagem) Do
+        with TSpeedButton.Create(formMensagem) Do
         begin
           parent     := pnBotoes;
           if (intWidBut <> 0) then
@@ -87,13 +92,13 @@ begin
           Tag        := 1;
           Cursor     := crHandPoint;
 
-          OnClick := @frmMensagem.pOnclick;
+          OnClick := @formMensagem.pOnclick;
 
         end;
       end
       else if (intQtdOpc = 2) then
       begin
-        with TSpeedButton.Create(frmMensagem) do
+        with TSpeedButton.Create(formMensagem) do
         begin
           parent     := pnBotoes;
           if (intWidBut <> 0) then
@@ -112,9 +117,9 @@ begin
           Cursor     := crHandPoint;
          // Picture    := TGDIPPicture(imgbotao1.Picture.Graphic);
           //Picture.Assign(imgbotao1.Picture);
-          OnClick    := @frmMensagem.pOnclick;
+          OnClick    := @formMensagem.pOnclick;
         end;
-        with TSpeedButton.Create(frmMensagem) do
+        with TSpeedButton.Create(formMensagem) do
         begin
           parent     := pnBotoes;
           Left       := 222;
@@ -129,12 +134,12 @@ begin
           Tag        := 2;
           Cursor     := crHandPoint;
           //Picture    := TGDIPPicture(imgbotao2.Picture.Bitmap);
-          OnClick    := @frmMensagem.pOnclick;
+          OnClick    := @formMensagem.pOnclick;
         end;
       end
       else if (intQtdOpc = 3) then
       begin
-        with TSpeedButton.Create(frmMensagem) do
+        with TSpeedButton.Create(formMensagem) do
         begin
           parent     := pnBotoes;
           Left       := 28;
@@ -146,9 +151,9 @@ begin
           Tag        := 1;
           Cursor     := crHourGlass;
           //Picture    := TGDIPPicture(imgbotao1.Picture.Bitmap);
-          OnClick    := @frmMensagem.pOnclick;
+          OnClick    := @formMensagem.pOnclick;
         end;
-        with TSpeedButton.Create(frmMensagem) do
+        with TSpeedButton.Create(formMensagem) do
         begin
           parent     := pnBotoes;
           Left       := 156;
@@ -160,9 +165,9 @@ begin
           Tag        := 2;
           Cursor     := crHandPoint;
           //Picture    := TGDIPPicture(imgbotao2.Picture.Bitmap);
-          OnClick    := @frmMensagem.pOnclick;
+          OnClick    := @formMensagem.pOnclick;
         end;
-        with TSpeedButton.Create(frmMensagem) do
+        with TSpeedButton.Create(formMensagem) do
         begin
           parent     := pnBotoes;
           Left       := 284;
@@ -174,14 +179,14 @@ begin
           Tag        := 3;
           Cursor     := crHandPoint;
           //Picture    := TGDIPPicture(imgbotao3.Picture.Bitmap);
-          OnClick    := @frmMensagem.pOnclick;
+          OnClick    := @formMensagem.pOnclick;
         end;
       end;
     end;
-    frmMensagem.intFocus  := intFocBot;
-    frmMensagem.blnSaiEsc := blnSaiEsc;
-    frmMensagem.ShowModal;
-    Result := frmMensagem.intRetorn;
+    formMensagem.intFocus  := intFocBot;
+    formMensagem.blnSaiEsc := blnSaiEsc;
+    formMensagem.ShowModal;
+    Result := formMensagem.intRetorn;
   except
     on E: Exception do
     begin
@@ -189,7 +194,7 @@ begin
       pMsgErro(E.Message);
     end;
   end;
-  FreeAndNil(frmMensagem);
+  FreeAndNil(formMensagem);
   FreeAndNil(fntFonte);
 end;
 
@@ -231,6 +236,48 @@ begin
   strString := AnsiReplaceStr(strString, #13, '');
   if (AnsiReplaceText(strString, ' ', '') = '') then
     Result := True;
+end;
+
+function Crypt(vString: string): string;
+var
+  i, ordem: integer;
+begin
+  Result := '';
+  for i := 1 to Length(vString) do
+  begin
+    ordem := Ord(vString[i]);
+    ordem += 3;
+    Result += Chr(ordem);
+  end;
+end;
+
+procedure leConfiguracaoBanco;
+begin
+  try
+    if(FileExists(DADOS_CONEXAO))then
+    begin
+      tipo       := leArquivoIni(DADOS_CONEXAO, 'DADOS','TIPO');
+      banco      := leArquivoIni(DADOS_CONEXAO, 'DADOS','BANCO');
+      ip         := leArquivoIni(DADOS_CONEXAO, 'DADOS','IP');
+      usuario    := leArquivoIni(DADOS_CONEXAO, 'DADOS','USUARIO');
+      senha      := leArquivoIni(DADOS_CONEXAO, 'DADOS','SENHA');
+    end;
+  except
+
+  end;
+end;
+
+function leArquivoIni(arquivo, secao, valor: String): String;
+var
+  iniArq: TIniFile;
+begin
+  iniArq := TIniFile.Create(arquivo);
+  try
+    Result := iniArq.ReadString(secao, valor,'Default');
+  finally
+    iniArq.Free;
+  end;
+
 end;
 
 end.

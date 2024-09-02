@@ -9,9 +9,9 @@
         <Filename Value="PDVLaz.lpr"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
-        <TopLine Value="5"/>
-        <CursorPos X="15" Y="14"/>
-        <UsageCount Value="61"/>
+        <TopLine Value="22"/>
+        <CursorPos X="58" Y="44"/>
+        <UsageCount Value="23"/>
       </Unit>
       <Unit>
         <Filename Value="untpdvlaz.pas"/>
@@ -20,10 +20,10 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="untPDVLaz"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="29"/>
-        <CursorPos X="32" Y="45"/>
-        <UsageCount Value="61"/>
+        <TopLine Value="13"/>
+        <UsageCount Value="23"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="Cadastros\untformcadastropadrao.pas"/>
@@ -32,55 +32,96 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="untFormCadastroPadrao"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="104"/>
-        <CursorPos X="10" Y="119"/>
-        <UsageCount Value="61"/>
+        <UsageCount Value="23"/>
       </Unit>
       <Unit>
         <Filename Value="Bibliotecas\untfuncoes.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="untFuncoes"/>
-        <EditorIndex Value="-1"/>
-        <WindowIndex Value="-1"/>
-        <TopLine Value="225"/>
-        <CursorPos X="25" Y="8"/>
-        <UsageCount Value="53"/>
+        <UsageCount Value="23"/>
       </Unit>
       <Unit>
-        <Filename Value="Cadastros\untfrmmensagem.pas"/>
+        <Filename Value="Cadastros\untformmensagem.pas"/>
         <IsPartOfProject Value="True"/>
-        <ComponentName Value="FrmMensagem"/>
+        <ComponentName Value="FormMensagem"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UnitName Value="untFrmMensagem"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="39"/>
-        <CursorPos X="23" Y="75"/>
-        <UsageCount Value="52"/>
-      </Unit>
-      <Unit>
-        <Filename Value="C:\lazarus\fpc\3.2.2\source\packages\fcl-image\src\ftfont.pp"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="181"/>
-        <UsageCount Value="8"/>
+        <UnitName Value="untFormMensagem"/>
+        <UsageCount Value="23"/>
       </Unit>
       <Unit>
         <Filename Value="Cadastros\untformcadastro.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="FormCadastro"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="untFormCadastro"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
-        <TopLine Value="29"/>
-        <CursorPos X="3" Y="44"/>
-        <UsageCount Value="29"/>
+        <WindowIndex Value="-1"/>
+        <UsageCount Value="23"/>
+      </Unit>
+      <Unit>
+        <Filename Value="untdm.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="DM"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+        <UnitName Value="untDM"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <UsageCount Value="23"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Cadastros\untformcadastroempresas.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormCadastroEmpresas"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UsageCount Value="23"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Utilitarios\untformdatabase.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormDataBase"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="2"/>
+        <CursorPos X="57" Y="13"/>
+        <UsageCount Value="23"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Bibliotecas\untconstantes.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="untConstantes"/>
+        <UsageCount Value="23"/>
+      </Unit>
+      <Unit>
+        <Filename Value="C:\Users\wandersondev\AppData\Local\lazarus\onlinepackagemanager\packages\BGRAControls\bgraimagemanipulation.pas"/>
+        <UnitName Value="BGRAImageManipulation"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1300"/>
+        <CursorPos X="18" Y="1307"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Utilitarios\untformdatabase.lfm"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="11"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit>
+      <Unit>
+        <Filename Value="D:\gestor_1_0_0\source\uFrmPrincipal.lfm"/>
+        <HasResources Value="True"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
       </Unit>
     </Units>
-    <General>
-      <ActiveWindowIndexAtStart Value="-1"/>
-    </General>
     <JumpHistory HistoryIndex="-1"/>
     <RunParams>
       <FormatVersion Value="2"/>

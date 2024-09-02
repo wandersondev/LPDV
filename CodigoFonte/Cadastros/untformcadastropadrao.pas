@@ -297,6 +297,9 @@ procedure TFormCadastroPadrao.actUltimoExecute(Sender: TObject);
 begin
   ;
 end;
-
+initialization
+Classes.RegisterClass(TFormCadastroPadrao);
+finalization
+Classes.UnRegisterClass(TFormCadastroPadrao);
 end.
 
